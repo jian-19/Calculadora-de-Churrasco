@@ -74,10 +74,19 @@ form {
     outline: none;
     border-radius: 6px;
     border: none;
+    background: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.411);
+    transition: transform 95ms linear, opacity 95ms ease-in-out;
+    color: var(--color-text);
+    font-weight: 700;
 }
 
-.inp:active{
-    color:aquamarine;
+.inp::placeholder{
+    color: var(--color-text);
+}
+
+.inp:hover{
+    transform: scale(1.1);
 }
 
 .btn {
@@ -97,4 +106,5 @@ form {
 .btn:hover{
     background-color: green;
     border: none;
+    color: var(--color-text);
 }
