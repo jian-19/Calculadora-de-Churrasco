@@ -9,21 +9,24 @@ function soma() {
     const criancas = inputcriancas.value;
     const duracao = inputduracao.value;
 
-    const qtdTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
-    const qtdTotalCerveja = cervejaPP(duracao) * adultos;
-    const qtdTotalBebidas= bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
+    if (adultos, criancas == "") {
+        alert("POR FAVOR!! Preencha todos os campos antes de calcular!!")
+    } else {
+        const qtdTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
+        const qtdTotalCerveja = cervejaPP(duracao) * adultos;
+        const qtdTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
 
-    resultado.innerHTML = `<p class="result">Para um churrasco com <br>${adultos} Adultos <br>
-    ${criancas} Crianças <br> Com uma duração de ${duracao} hrs!</p>`
-    resultado.innerHTML += `<p>${qtdTotalCarne/1000} Kg de Carne</p>`
-    resultado.innerHTML += `<p>${Math.ceil(qtdTotalCerveja/350)} Latas de Cerveja</p>`
-    resultado.innerHTML += `<p>${Math.ceil(qtdTotalBebidas/2000)} Garrafas de Refrigerantes</p>`
+        resultado.innerHTML = `<p class="result">Para um churrasco com <br>${adultos} Adultos <br>
+        ${criancas} Crianças <br> Com uma duração de ${duracao} hrs!</p>`
+        resultado.innerHTML += `<p>${qtdTotalCarne / 1000} Kg de Carne</p>`
+        resultado.innerHTML += `<p>${Math.ceil(qtdTotalCerveja / 350)} Latas de Cerveja</p>`
+        resultado.innerHTML += `<p>${Math.ceil(qtdTotalBebidas / 2000)} Garrafas de Refrigerantes</p>`
 
 
-    inputadultos.value = "";
-    inputcriancas.value = "";
-    inputduracao.value = "";
-
+        inputadultos.value = "";
+        inputcriancas.value = "";
+        inputduracao.value = "";
+    }
 }
 
 function carnePP(duracao) {
