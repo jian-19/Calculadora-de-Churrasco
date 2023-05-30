@@ -128,6 +128,10 @@ dialog[open] {
     font-weight: 700;
 }
 
+dialog[open] button {
+ border: none;
+}
+
 dialog button {
     width: 25%;
     height: 10%;
@@ -140,6 +144,8 @@ dialog button {
     margin-bottom: 2%;
     cursor: pointer;
 }
+
+
 
 dialog button:hover {
     border: none;
