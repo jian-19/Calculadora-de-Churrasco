@@ -6,34 +6,14 @@ const resultado = document.getElementById('resultado')
 const modal = document.querySelector('dialog')
 const close = document.querySelector('dialog button')
 
-const placeholder1 = document.getElementById('adultos');
-const placeholder2 = document.getElementById('criancas');
-const placeholder3 = document.getElementById('duracao');
-
 function closeModal() {
     modal.close()
 }
 
-function placeholderadultos() {
-    placeholder1.placeholder = "Quantidade";
-}
-
-function placeholdercriancas() {
-    placeholder2.placeholder = "Quantidade";
-}
-function placeholderduracao() {
-    placeholder3.placeholder = "Horas";
-}
-
 function soma() {
-    placeholder1.placeholder = "Crianças";
-    placeholder2.placeholder = "Adultos";
-    placeholder3.placeholder = "Duração";
-
     const adultos = inputadultos.value;
     const criancas = inputcriancas.value;
     const duracao = inputduracao.value;
-
 
     if (adultos, criancas == "") {
         modal.show()
