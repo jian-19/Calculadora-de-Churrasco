@@ -18,11 +18,11 @@
             <img src="./assets/image/img.png" alt="" class="logo">
 
             <form action="" class="formulario">
-                <input title="Quantidade de Adultos" id="adultos" type="text" class="inp" placeholder="Quantidade de Adultos"
+                <input title="Quantidade de Adultos" id="adultos" type="text" onclick="placeholderadultos()" class="inp" placeholder="Adultos"
                     required>
-                <input title="Quantidade de Crianças" id="criancas" type="text" class="inp" placeholder="Quantidade de Crianças"
+                <input title="Quantidade de Crianças" id="criancas" type="text" class="inp" onclick="placeholdercriancas()" placeholder="Crianças"
                     required>
-                <input title="Duração do Churrasco" id="duracao" type="text" class="inp" placeholder="Duração (h)">
+                <input title="Duração do Churrasco" id="duracao" type="text" class="inp" onclick="placeholderduracao()" placeholder="Duração">
             </form>
             <button title="Calcular" type="button" class="btn" onclick="soma()" id="button">Calcular</button>
             <div id="resultado">
