@@ -3,6 +3,12 @@ const inputcriancas = document.getElementById('criancas');
 const inputduracao = document.getElementById('duracao');
 
 const resultado = document.getElementById('resultado')
+const modal = document.querySelector('dialog')
+const close = document.querySelector('dialog button')
+
+function closeModal() {
+    modal.close()
+}
 
 function soma() {
     const adultos = inputadultos.value;
@@ -10,7 +16,7 @@ function soma() {
     const duracao = inputduracao.value;
 
     if (adultos, criancas == "") {
-        alert("POR FAVOR!! Preencha todos os campos antes de calcular!!")
+        modal.show()
     } else {
         const qtdTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
         const qtdTotalCerveja = cervejaPP(duracao) * adultos;

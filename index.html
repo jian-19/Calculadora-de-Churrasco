@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/image/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Calculadora de Churrasco</title>
 </head>
@@ -17,16 +18,23 @@
             <img src="./assets/image/img.png" alt="" class="logo">
 
             <form action="" class="formulario">
-                <input title="Quantidade de Adultos" id="adultos" type="text" class="inp" placeholder="Adultos" required>
-                <input title="Quantidade de Crianças" id="criancas" type="text" class="inp" placeholder="Crianças" required>
+                <input title="Quantidade de Adultos" id="adultos" type="text" class="inp" placeholder="Adultos"
+                    required>
+                <input title="Quantidade de Crianças" id="criancas" type="text" class="inp" placeholder="Crianças"
+                    required>
                 <input title="Duração do Churrasco" id="duracao" type="text" class="inp" placeholder="Duração (h)">
             </form>
-            <button title="Calcular" class="btn" onclick="soma()" id="button">Calcular</button>
+            <button title="Calcular" type="button" class="btn" onclick="soma()" id="button">Calcular</button>
             <div id="resultado">
-
             </div>
+            <dialog>
+                <h1>Por Favor!!</h1>
+                <p>Preencha todos os campos disponiveis</p>
+                <button onclick="closeModal()">OK</button>
+            </dialog>
         </div>
     </main>
 </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="./assets/script.js"></script>
