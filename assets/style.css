@@ -44,8 +44,8 @@
 }
 
 img {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     margin: 5%;
 
 }
@@ -90,6 +90,14 @@ form {
     transform: scale(1.1);
 }
 
+.pessoas {
+    display: flex;
+}
+
+.bebidas{
+    display: flex;
+}
+
 .btn {
     margin-top: 2%;
     padding: 2%;
@@ -121,16 +129,16 @@ dialog[open] {
     align-items: center;
     flex-direction: column;
     padding: 0.6%;
-    width: 50%;
     text-align: center;
     box-shadow: 0px 2px 10px #fffcf7;
-    margin-left: 25%;
     font-weight: 700;
-}
-
-dialog[open] button {
- border: none;
-}
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
 
 dialog button {
     width: 25%;
@@ -143,6 +151,7 @@ dialog button {
     font-weight: 700;
     margin-bottom: 2%;
     cursor: pointer;
+    background-color: green;
 }
 
 
@@ -150,7 +159,6 @@ dialog button {
 dialog button:hover {
     border: none;
     transform: scale(1.1);
-    background-color: green;
 }
 
 dialog h1 {
